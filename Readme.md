@@ -1,11 +1,11 @@
+
 for x in range(5):
     for y in range(5):
-        c = "red"
-        if (y == 1 and x in (0, 2, 4)) or (y > 2 and x in (0, 4)):
-            c = "white"
-        elif y == 3 and x in (1, 3):
-            c = "black"
-        elif y > 2 and x in (1, 2, 3):
-            c = "orange"
-        pydle(x, y, "", c)
-
+        pydle(x, y, "", "red")
+    for z in range(3,5):
+        pydle(0,z,"","white")
+        pydle(4,z,"","white")
+    for z in range(2):
+        pydle(1, 3, "", "orange")
+        pydle(2, 3, "", "orange")
+        pydle(3, 3, "", "orange")
